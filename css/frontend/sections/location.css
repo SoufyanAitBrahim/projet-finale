@@ -1,0 +1,431 @@
+.highlight {
+    color: #ff6b35;
+}
+
+.highlight a {
+    color: #ff6b35;
+    text-decoration: none;
+}
+
+.highlight a:hover {
+    text-decoration: underline;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+    margin: 0 auto;
+    /* padding: 80px 20px;
+    max-width: 1400px; */
+
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 55px;
+    margin: 0 auto; */
+}
+
+.location__script {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.location__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.location__title h2 {
+    font-family: "Poppins", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    /* font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: 2px; */
+
+    /* font-family: "Poppins", Helvetica;
+    font-weight: bold;
+    color: #ffffff; */
+    font-size: clamp(1rem, 3.5vw, 5rem);
+}
+
+.location__descriptiont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    /* max-width: 800px; */
+}
+
+.location__descriptiont h3 {
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    /* font-size: clamp(1.5rem, 4vw, 2.5rem); */
+    text-align: center;
+    /* line-height: 1.2; */
+    font-size: clamp(0.7rem, 3vw, 3rem);
+}
+
+.location__descriptiont p {
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #878282;
+    /* font-size: clamp(1rem, 2.5vw, 1.2rem); */
+    text-align: center;
+    /* line-height: 1.6; */
+
+    font-size: clamp(0.5rem, 2vw, 2rem);
+}
+
+.location__descriptiont h5 {
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    /* font-size: clamp(0.9rem, 2vw, 1.1rem); */
+    text-align: center;
+
+    font-size: clamp(0.7rem, 2vw, 2rem);
+
+}
+
+/* Slider Container */
+.location__slider-container {
+    position: relative;
+    overflow: hidden;
+    /* width: 100%; */
+    /* height: 500px; */
+}
+
+.location__sliders {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 200%;
+    /* Two slides */
+    height: 100%;
+}
+
+.location__slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 50%;
+    /* Each slide takes half the container */
+    min-height: 100%;
+    /* padding: 20px; */
+}
+
+.google-map__location {
+    position: relative;
+    /* width: 400px;
+    height: 300px; */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    /* box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2); */
+
+    width: 37vw;
+    height: 37vw;
+}
+
+.google__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 120px;
+    height: 40px; */
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    background-color: #000000;
+    /* border-radius: 0px 15px 0px 0px; */
+
+    width: 11vw;
+    height: 4vw;
+    margin-top: 32.5vw;
+    background-color: #000000;
+    border-radius: 0px 15px 15px 0px;
+    overflow: hidden;
+}
+
+.google__icon p {
+    font-family: "Inter", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    /* font-size: 1rem; */
+
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.content__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* min-width: 250px; */
+
+    /* gap: 10px; */
+}
+
+.restaurant__img {
+    width: 16.5vw;
+    height: 20vw;
+    border-radius: 45%;
+    overflow: hidden;
+    border: 0.3vw solid #ff6b35;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.restaurant__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .restaurant__title {
+    margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+} */
+
+.restaurant__title,
+.restaurant__script {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.restaurant__title h3,
+.restaurant__script h3 {
+    font-family: "Inter", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    text-align: center;
+
+    /* font-family: "Inter", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    text-align: center; */
+}
+
+.restaurant__title p {
+    font-family: "Inter", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    text-align: center;
+
+    /* font-family: "Inter", Helvetica;
+    font-weight: 600;
+    color: #ff6b35;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    text-align: center; */
+}
+
+.restaurant__script p {
+    /* font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #878282;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    text-align: center;
+    line-height: 1.5; */
+
+    font-family: "Poppins", Helvetica;
+    font-weight: bold;
+    color: #878282;
+    font-size: clamp(0.2rem, 1vw, 0.8rem);
+    text-align: center;
+}
+
+/* Slider Indicators */
+.slider__indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background-color: #ff6b35;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+/* .location {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 55px;
+    margin: 0 auto;
+}
+
+.location__script {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.location__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.location__title h2 {
+    font-family: "Poppins", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: clamp(1rem, 3.5vw, 5rem);
+}
+
+.location__descriptiont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.location__descriptiont h3 {
+    font-family: "Poppins", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: clamp(0.7rem, 3vw, 3rem);
+    text-align: center;
+}
+
+.location__descriptiont p {
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #878282;
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.location__descriptiont h5 {
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: clamp(0.7rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.location__sliders {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15px;
+    position: relative;
+    gap: 100px;
+}
+
+.google-map__loaction {
+    position: relative;
+    width: 45vw;
+    height: 45vw;
+    overflow: hidden;
+    background: url(https://c.animaapp.com/mbcpgwidQDBZ5R/img/location--info-map.png) 50% 50% / cover;
+}
+
+.google__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 11vw;
+    height: 4vw;
+    margin-top: 40vw;
+    background-color: #000000;
+    border-radius: 0px 21px 21px 0px;
+    overflow: hidden;
+}
+
+.google__icon p {
+    font-family: "Inter", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.content__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.restaurant__title {
+    margin-bottom: 25px;
+}
+
+.restaurant__title, .restaurant__script {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.restaurant__title h3, .restaurant__script h3 {
+    font-family: "Inter", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    text-align: center;
+}
+
+.restaurant__title p {
+    font-family: "Inter", Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    text-align: center;
+}
+
+.restaurant__script p  {
+    font-family: "Poppins", Helvetica;
+    font-weight: bold;
+    color: #878282;
+    font-size: clamp(0.2rem, 1vw, 0.8rem);
+    text-align: center;
+} */

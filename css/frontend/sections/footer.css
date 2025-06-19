@@ -1,0 +1,109 @@
+.footer {
+    display: flex;
+    max-width: 1580px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    gap: 25px;
+    margin: 15px auto 0px;
+    padding: 20px;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__script,
+.footer__opening-time,
+.footer__links,
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+
+    gap: 10px;
+}
+
+
+.footer__script-description {
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #878282;
+    text-align: left;
+    font-size: clamp(0.5rem, 2vw, 1.4rem);
+}
+
+.footer__sucialmedia-icons, .footer__right div {
+    display: flex;
+    flex-direction: row;
+
+    gap: 15px;
+}
+
+.footer__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease;
+}
+
+.footer__icons:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 112, 0, 0.3);
+}
+
+.footer__opening-time h4,
+.footer__links h4,
+.footer__contact h4 {
+    font-weight: bold;
+    font-family: var(--my-poppins);
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.footer__opening-time p,
+.footer__links p,
+.footer__contact p, .footer__right p {
+    font-family: "Inter", Helvetica;
+    font-weight: 500;
+    color: #878282;
+    text-align: left;
+    font-size: clamp(0.5rem, 2vw, 1.4rem);
+}
+
+.footer__subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.Subscribe {
+    font-weight: bold;
+    font-family: var(--my-poppins);
+    color: var(--primary-color);
+    font-size: 16px;
+
+    background-color: var(--third-color);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* other css file imports */
+@import url("frontend/sections/header.css");
+@import url("frontend/sections/hero.css");
+/* @import url("sections/about.css"); */
+@import url("frontend/sections/newabout.css");
+@import url("frontend/sections/menu.css");
+@import url("frontend/sections/location.css");
+@import url("frontend/sections/reviews.css");
+@import url("frontend/sections/footer.css");
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root {
+  --my-poppins: "Poppins";
+  --my-inter: "Inter";
+
+  --primary-color: #ffffff;
+  --secondary-color: #030101;
+  --third-color: #ff7000;
+
+  --black-200: #020202;
+  --black-300: #333333;
+  --black-400: #1f1e31;
+  --black-500: #555555;
+  --gray-100: #888888;
+
+  --color-white: #fff;
+  --color-creamson: #fff0de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* START: header media queries */
+@media screen and (max-width: 900px) {
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: flex;
+  }
+
+  .header__account_button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__logo h4 {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: flex;
+  }
+}
+
+/* END: header media queries */
+
+/* START: about-us queries */
+@media screen and (max-width: 900px) {
+  /* .about_us {
+    gap: 25px;
+  }
+
+  .about_us__img {
+    width: 300px;
+  }
+
+  .content-title {
+    margin-left: -25px;
+  }
+
+  .about_us__text-content {
+    margin-left: 5px;
+  }
+
+  .buttons {
+    gap: 13px;
+  }
+
+  .booking-button,
+  .ordering-button {
+    padding: 10px 14px;
+  }
+
+  .text-wrapper-8,
+  .text-wrapper-9 {
+    font-size: 10px;
+  }
+
+  .content__img img {
+    margin-top: -10px;
+  } */
+}
+
+@media screen and (max-width: 550px) {
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .parent img {
+    left: 60%;
+  }
+
+  .parent1 img {
+    display: none;
+  }
+
+  /* .about_us__img {
+    display: none;
+  }
+
+  .about_us__content {
+    align-items: center;
+  }
+
+  .about_us__text-content {
+    margin-left: 35px;
+  }
+
+    .content-title {
+    margin-left: 0px;
+  }*/
+
+  .buttons {
+    gap: 3px;
+  }
+
+  .booking-button,
+  .ordering-button {
+    padding: 7px 9px;
+  }
+
+  .text-wrapper-8,
+  .text-wrapper-9 {
+    font-size: 10px;
+  }
+
+  .content__img img {
+    margin-top: -10px;
+  }
+}
+
+/* END: about-us queries */
+
+/* START: menu queries */
+@media (min-width: 901px) {
+  .slider-viewport {
+    max-width: 1200px;
+  }
+
+  .categories-container {
+    gap: 40px;
+  }
+
+  .menu__categories {
+    width: 350px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu__sliders {
+    gap: 40px;
+  }
+
+  .slider-viewport {
+    max-width: 800px;
+  }
+
+  .categories-container {
+    gap: 30px;
+  }
+
+  .menu__categories {
+    width: 320px;
+  }
+
+  .categories__img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .menu__arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+  .menu__arrow svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .categories__script h4 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu__sliders {
+    gap: 20px;
+  }
+
+  .slider-viewport {
+    max-width: 300px;
+  }
+
+  .categories-container {
+    gap: 20px;
+  }
+
+  .menu__categories {
+    width: 280px;
+  }
+
+  .categories__img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .menu__arrow {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu__arrow svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .categories__script h4 {
+    font-size: 20px;
+  }
+
+  .categories__script p {
+    font-size: 13px;
+  }
+
+  .categories__order-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 900px) {
+  .menu__categories2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .menu__categories3 {
+    display: none;
+  }
+} */
+/* END: menu queries */
